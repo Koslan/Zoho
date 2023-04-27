@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Widget</title>
+    <title>Deals Summary Widget</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="widget-container">
-        <h1>Test Widget 1</h1>
-        <p>This is a simple test widget for Zoho CRM.</p>
+        <h1>Deals Summary Widget</h1>
+        <div class="summary-container">
+            <div class="summary-item">
+                <div class="summary-label">Open Deals Amount:</div>
+                <div class="summary-value" id="open-deals-amount">$0</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-label">Won Deals Amount:</div>
+                <div class="summary-value" id="won-deals-amount">$0</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-label">Lost Deals Amount:</div>
+                <div class="summary-value" id="lost-deals-amount">$0</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-label">Win Rate:</div>
+                <div class="summary-value" id="win-rate"># (0%)</div>
+            </div>
+        </div>
     </div>
 
     <script src="main.js"></script>
