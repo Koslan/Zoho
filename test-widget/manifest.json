@@ -1,0 +1,36 @@
+{
+    "Platform_version": "2.0",
+    "Information": {
+      "Name": "Test Widget",
+      "Description": "A simple test widget for Zoho CRM.",
+      "Version": "1.0",
+      "Author": "Your Name",
+      "Email": "your.email@example.com"
+    },
+    "TemplateAPI": {
+      "Version": "2"
+    },
+    "Scopes": {
+      "crm": {
+        "Read": "contacts"
+      }
+    },
+    "Widgets": [
+      {
+        "Name": "Test Widget",
+        "Type": "URL",
+        "URL": "index.html",
+        "Vertical_Size": "1",
+        "Horizontal_Size": "1",
+        "Config": {
+          "Hosts": {
+            "crm": {
+              "Name": "Contacts",
+              "Location": "Related_Lists"
+            }
+          }
+        }
+      }
+    ]
+  }
+  
