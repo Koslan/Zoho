@@ -11,16 +11,16 @@ for each  deal in dealsResp
 {
 	dealAmount = deal.get("Amount");
 	dealStage = deal.get("Stage");
-	if(dealStage.contains("Open"))
+	if(dealStage.contains("Qualification"))
 	{
 		openDealsAmount = openDealsAmount + dealAmount;
 	}
-	else if(dealStage.contains("Won"))
+	else if(dealStage.contains("Closed Won"))
 	{
 		wonDealsAmount = wonDealsAmount + dealAmount;
 		wonDealsCount = wonDealsCount + 1;
 	}
-	else if(dealStage.contains("Lost"))
+	else if(dealStage.contains("Closed Lost"))
 	{
 		lostDealsAmount = lostDealsAmount + dealAmount;
 		lostDealsCount = lostDealsCount + 1;
